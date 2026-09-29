@@ -1,2 +1,69 @@
-/* Estilos de la calculadora de factorial */
-/* Agrega tus estilos aquí */
+/* Fondo oscuro */
+body {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    min-height: 100vh;
+}
+
+/* Título */
+h1 {
+    color: #e94560;
+    margin-bottom: 10px;
+}
+
+/* Input oscuro */
+.form-control {
+    background-color: #16213e;
+    border: 1px solid #e94560;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    background-color: #16213e;
+    border-color: #0f3460;
+    color: #ffffff;
+    box-shadow: 0 0 8px rgba(233, 69, 96, 0.4);
+}
+
+/* dato inválido */
+.form-control.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 8px rgba(220, 53, 69, 0.4);
+}
+
+/* Botón */
+#calcularBtn {
+    width: 100%;
+    transition: all 0.3s;
+    /* Animación suave al pasar el mouse */
+}
+
+#calcularBtn:hover {
+    transform: translateY(-2px);
+    /* Sube 2px al pasar el mouse */
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.4);
+    /* Sombra azul */
+}
+
+/* Resultado */
+#resultadoContenido {
+    margin-top: 20px;
+}
+
+#resultadoValor {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Alerta de error */
+#errorMensaje {
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+    padding-bottom: 20px;
+}

@@ -6,15 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Factorial</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <h1>Calculadora de Factorial</h1>
+    <div class="container mt-5">
+        <h1 class="text-center">Calculadora de Factorial</h1>
+        <p class="text-center text-secondary mb-4">Ingresa un número entero positivo y obtén su factorial</p>
 
+        <div class="mb-3">
+            <label for="numeroImput" class="form-label">Ingresa un número</label>
+            <input type="text" class="form-control" id="numeroImput" placeholder="Ejemplo: 5">
+            <button class="btn btn-primary mt-3" id="calcularBtn">Calcular Factorial</button>
+        </div>
 
+        <div class="alert alert-danger d-none" id="errorMensaje"></div>
+
+        <div class="alert alert-success d-none" id="resultadoContenido">
+            <h4>Resultado:</h4>
+            <p id="resultadoValor"></p>
+        </div>
+    </div>
+
+    <footer class="text-center text-secondary mt-5">
+        <p>Práctica de Lógica de Programación</p>
+    </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
